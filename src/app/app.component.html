@@ -1,20 +1,48 @@
 <mat-toolbar class="mat-elevation-z8">
-  <button
-    mat-icon-button
-    *ngIf="sidenav.mode === 'over'"
-    (click)="sidenav.toggle()"
-  >
-    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
-    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
-  </button>
-  <div class="logo">
-    <a href="/" class="simple-text logo-mini">
-        <div  class="logo-img">
-            <img src="./assets/images/Mobile-M-Icon-1-corners.png">
-        </div>
-    </a>
-    <a href="/" class="simple-text logo-normal"></a>
-  </div> 
+  <mat-toolbar-row>
+    <button
+      mat-icon-button
+      (click)="sidenav.toggle()"
+    >
+      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+      <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+    </button>
+    <!-- <div class="logo">
+      <a href="/" class="simple-text logo-mini">
+          <div  class="logo-img">
+              <img src="./assets/images/Mobile-M-Icon-1-corners.png">
+          </div>
+      </a>
+      <a href="/" class="simple-text logo-normal"></a>
+    </div> -->
+    <img src="./assets/images/Mobile-M-Icon-1-corners.png" alt="">
+    
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+
+
+              <button mat-icon-button>
+                  <mat-icon>settings</mat-icon>
+              </button>
+
+
+              <button mat-icon-button>
+                  <mat-icon>help_outline</mat-icon>
+              </button>
+
+
+              <!-- <button mat-button [matMenuTriggerFor]="menu">
+                  <mat-icon>person_outline</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu">
+                  <button mat-menu-item>
+                      <mat-icon>exit_to_app</mat-icon>
+                      Sign out
+                  </button>
+              </mat-menu> -->
+          <!-- </li> -->
+
+    </div>
+  </mat-toolbar-row>
 </mat-toolbar>
 
 <mat-sidenav-container>
