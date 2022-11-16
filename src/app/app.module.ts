@@ -18,7 +18,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
-import { ChartModule } from 'angular-highcharts';
 
 @NgModule({
   declarations: [
@@ -40,7 +39,6 @@ import { ChartModule } from 'angular-highcharts';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    ChartModule
     // AppRoutingModule
   ],
   providers: [GradesApiService],
