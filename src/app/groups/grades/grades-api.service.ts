@@ -12,6 +12,6 @@ export class GradesApiService {
   }
   // GET list of public, future events
   getGrades(): Observable<Grade[]>{
-    return this.http.get<Grade[]>(`${API_URL}/api`);
+    return this.http.get<Grade[]>(`${API_URL}/api/assessment`);
     }
   }
